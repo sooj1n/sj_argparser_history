@@ -19,3 +19,8 @@ test = [
     "pytest>=8.3.1",
     "pytest-cov>=5.0.0",
 ]
+
+
+[project.urls]
+Homepage = "https://github.com/sooj1n/sj_argparser_history/tree/main"
+Issues = "https://github.com/sooj1n/sj_argparser_history/tree/main/issues"
