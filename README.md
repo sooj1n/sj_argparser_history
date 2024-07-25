@@ -18,3 +18,17 @@ mkdir 1932
   pdm 1220
    rm 1104
 ```
+
+###dev env setting
+
+$ git clone <URL>
+$ cd<PJT_NAME>
+$ cd pdm install
+$ [pdm test | pytest]
+
+#option 
+$ pdm add -dG test pytest pytest-cov
+
+#ref
+- https://pdm-project.org/en/latest/usage/dependency/
+
