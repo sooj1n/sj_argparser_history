@@ -26,6 +26,22 @@ $ cd<PJT_NAME>
 $ cd pdm install
 $ [pdm test | pytest]
 
+### dev env setting
+$ git clone <URL>
+$ cd <PJT_NAME>
+$ pyenv virtualenv 3.11.9 clean 
+$ pyenv global clean 
+$ rm -rf .venv
+$ pdm venv create
+$ source .venv/bin/activate
+$ pdm install
+$ pdm list
+$ pytest
+
+# option
+$ pdm add -dG test pytest pytest-cov
+
+
 # option 
 $ pdm add -dG test pytest pytest-cov
 
