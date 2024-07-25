@@ -29,6 +29,13 @@ $ [pdm test | pytest]
 # option 
 $ pdm add -dG test pytest pytest-cov
 
-# ref
+### deploy
+# dev branch
+$ pip install git+https://github.com/soojin/sj_argparser_history.git@0.2.0/args
+
+# main
+$ pip install git+https://github.com/soojin/sj_argparser_history.git@main 
+
+### ref
 - https://pdm-project.org/en/latest/usage/dependency/
 
