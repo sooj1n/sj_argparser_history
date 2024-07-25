@@ -1,5 +1,5 @@
 def hello_msg():
-    print("hello")
+    return "hello"
 
 
 def cmd():
