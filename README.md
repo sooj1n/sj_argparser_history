@@ -37,6 +37,12 @@ $ source .venv/bin/activate
 $ pdm install
 $ pdm list
 $ pytest
+=============================== test session starts ===============================
+platform linux -- Python 3.11.9, pytest-8.3.1, pluggy-1.5.0
+rootdir: /home/sujin/code/sj_args_history
+configfile: pyproject.toml
+plugins: cov-5.0.0
+collected 0 items
 
 # option
 $ pdm add -dG test pytest pytest-cov
