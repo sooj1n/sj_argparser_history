@@ -1,6 +1,6 @@
 [project]
 name = "sj_args_history"
-version = "0.1.0"
+version = "0.2.0"
 description = "Default template for PDM package"
 authors = [
     {name = "sooj1n", email = "sujin19371@gmail.com"},
@@ -13,3 +13,27 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=8.3.1",
+    "pytest-cov>=5.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src",
+]
+
+[tool.pdm.scripts]
+test = "pytest"
+ctest = "pytest --cov"
+stest = "pytest -s"
+giti = "pip install git+https://github.com/sooj1n/sj_argparser_history.git@0.2.0/args"
+ 
+[project.scripts]
+my-history = 'sj_args_history.cli:cmd'
+
+[project.urls]
+Homepage = "https://github.com/sooj1n/sj_argparser_history/tree/main"
+Issues = "https://github.com/sooj1n/sj_argparser_history/tree/main/issues"
